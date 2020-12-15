@@ -1,0 +1,21 @@
+{ 
+    "version": "0.2.0", 
+    "configurations": [ 
+        { "type": "lldb", 
+        "request": "launch",
+        "name": "Launch", 
+        "program": "${fileDirname}/${fileBasenameNoExtension}.out", 
+        "args": [], 
+        "preLaunchTask": "g++ build active file", 
+        "stdio": [null,null,null], 
+
+        /*
+        만약  파일 입출력을 하고싶을 경우 
+        순서대로 stdin, stdout, sterr과 연결할 파일명을 작성하면 됨
+        입력파일 명을 작성하였으나 파일이 존재하지 않을 경우 에러뜸주의!
+        */
+
+        "terminal": "integrated" 
+        } 
+    ] 
+}
